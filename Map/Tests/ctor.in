@@ -1,0 +1,17 @@
+newDefault a
+newInit a
+= b a
+clear b
+= a b
+= c b
+newInit c
+newInit b
+= b c
+clear b
+erase c 3
+= b c
+erase b 1
+erase b 2
+erase b 7
+clear b
+clear c

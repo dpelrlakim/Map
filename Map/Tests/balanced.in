@@ -1,0 +1,21 @@
+[]= a 0 0
+[]= a -4 4
+[]= a 4 -4
+[]= a -6 6
+[]= a -2 2
+[]= a 2 -2
+[]= a 6 -6
+[]= a 1 -1
+[]= a 5 -5
+[]= a 7 -7
+erase a 7
+erase a 4
+erase a 1
+erase a 6
+erase a 0
+= b a
+clear b
+erase a -4
+erase a -6
+erase a 2
+clear a

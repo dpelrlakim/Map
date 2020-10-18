@@ -1,0 +1,9 @@
+newInit m
+erase m 1
+erase m 7
+erase m 2
+size m
+[]= m 2 -100
+erase m 2
+clear m
+empty m

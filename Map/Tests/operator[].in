@@ -1,0 +1,25 @@
+newDefault a
+[] a 10
+[]= a 20 1
+[]= a 0 -1
+[]= a 11 2
+[]= a 30 3
+[]= a -10 -2
+[]= a 9 8
+erase a 0
+erase a 9
+erase a 20
+[] a -10
+[] a 0
+[] a 9
+[] a 10
+at a 11
+at a 20
+at a 30
+at a 40
+= b a
+clear b
+erase a 0
+erase a 11
+erase a 9
+erase a 10

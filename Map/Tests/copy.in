@@ -1,0 +1,13 @@
+newDefault m1
+= m2 m1
+empty m2
+newInit m1
+= m2 m1
+size m2
+erase m1 5
+= m2 m1
+= m3 m2
+size m3
+clear m1
+= m2 m1
+empty m2

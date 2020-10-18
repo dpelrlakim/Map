@@ -1,0 +1,12 @@
+[] a 10
+[] a 20
+[] a 11
+[] a 19
+[] a 12
+[] a 18
+erase a 10
+erase a 20
+erase a 11
+erase a 19
+erase a 12
+erase a 18

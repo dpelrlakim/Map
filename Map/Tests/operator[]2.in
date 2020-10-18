@@ -1,0 +1,24 @@
+[] a 10
+[] a 20
+[] a 0
+[] a 15
+[] a -5
+[] a 5
+[]= a -2147483648 -2147483648
+[]= a 2147483647 2147483647
+erase a 10
+at a 10
+erase a -2147483648
+at a -2147483648
+erase a 2147483647
+at a 2147483647
+erase a 15
+at a 15
+erase a 20
+at a 20
+erase a 5
+at a 5
+erase a 0
+at a 0
+erase a -5
+at a -5

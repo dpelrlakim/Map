@@ -1,0 +1,25 @@
+[] a 0
+[] a 5
+[] a 9
+[] a 8
+[] a 7
+[] a 6
+[] a 4
+[] a 3
+[] a 2
+erase a 9
+erase a 8
+erase a 7
+erase a 5
+erase a 6
+erase a 4
+erase a 3
+erase a 0
+[] a -3
+[] a -2
+[] a -1
+erase a -3
+erase a -2
+erase a 2
+erase a -1
+clear a
