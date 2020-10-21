@@ -42,7 +42,6 @@ template <typename K, typename V> class map {
  	V &at(const K &targetKey);
  	V &operator[](const K &targetKey);
  	const V &at(const K &targetKey) const;
-	const V &operator[](const K &targetKey) const;
  	bool empty() const;
  	size_t size() const;
  	size_t count(const K &targetKey) const;
@@ -290,15 +289,6 @@ V &map<K,V>::at(const K &targetKey) {
 }
 
 template <typename K, typename V>
-V &map<K,V>::operator[](const K &targetKey) {
-	BST *parent = nullptr; // Remembering the parent allows us to insert in O(h)
-	BST *targetNode = keySearch(root, targetKey, &parent);
-	if (!targetNode) targetNode = createLeaf(targetNode, parent, {targetKey, V()});
-	if (!root) root = targetNode;
-	return targetNode->nodePair.second;
-}
-
-template <typename K, typename V>
 const V &map<K,V>::at(const K &targetKey) const {
 	BST *target = keySearch(root, targetKey, nullptr);
 	if (!target) throw std::out_of_range("No such key\n");
@@ -306,8 +296,8 @@ const V &map<K,V>::at(const K &targetKey) const {
 }
 
 template <typename K, typename V>
-const V &map<K,V>::operator[](const K &targetKey) const {
-	BST *parent = nullptr; 
+V &map<K,V>::operator[](const K &targetKey) {
+	BST *parent = nullptr; // Remembering the parent allows us to insert in O(h)
 	BST *targetNode = keySearch(root, targetKey, &parent);
 	if (!targetNode) targetNode = createLeaf(targetNode, parent, {targetKey, V()});
 	if (!root) root = targetNode;
